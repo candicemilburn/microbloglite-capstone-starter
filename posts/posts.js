@@ -1,3 +1,6 @@
-/* Posts Page JavaScript */
+"use strict"
 
-"use strict";
+window.onload=()=>{
+
+console.log("Welcome in")
+}

@@ -29,10 +29,6 @@ const register = async (event) => {
         body: JSON.stringify(formDataAsObject)
     });
 
-  
-    // if (!response.ok) {
-    //     throw new Error("Failed to add user. Please try again later.");
-    // }
 
      let newUser = await response.json();
 

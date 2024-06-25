@@ -1,1 +1,6 @@
-/* Landing Page CSS */
+body {
+    background-color: black;
+    margin-bottom: 10px;
+    /* bottom = footer height */
+    padding: 5px;
+}

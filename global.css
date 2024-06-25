@@ -18,6 +18,16 @@
 }
 
 
+
+html {
+    position: relative;
+    min-height: 100%;
+}
 body{
-    background-color: black;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+footer{
+    margin-top: auto;
 }
