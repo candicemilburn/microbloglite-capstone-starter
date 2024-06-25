@@ -39,7 +39,7 @@ const register = async (event) => {
     console.log(newUser, "New user created!");
     alert("Account successfully created. Please log in now.");
     //redirect user to log in for the first time and create a key
-    window.location.href = "../index.html";
+    window.location.href = "/index.html";
     
 } catch (error) {
     console.log("Error occurred:", error);
