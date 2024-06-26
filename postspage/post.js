@@ -2,5 +2,7 @@
 
 window.onload=()=>{
 
-console.log("Welcome in")
+console.log("hmmmm");
+
+showPost();
 }
