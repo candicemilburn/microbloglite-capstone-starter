@@ -1,6 +1,12 @@
 "use strict";
 
+window.onload = getLoginData();
+console.log(getLoginData());
+
+
+
 const loginForm = document.querySelector("#loginForm");
+
 
 loginForm.onsubmit = function (event) {
     // Prevent the form from refreshing the page,
@@ -21,11 +27,8 @@ loginForm.onsubmit = function (event) {
     login(loginData);
 };
 
-// function isLoggedIn () {
-//     const loginData = getLoginData();
-//     return Boolean(loginData.token);
-// }
-// function getLoginData () {
-//     const loginJSON = window.localStorage.getItem("login-data");
-//     return JSON.parse(loginJSON) || {};
-// }
+
+function showPW(){
+
+}
+

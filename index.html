@@ -23,14 +23,14 @@
     <!-- Run BEFORE page is finished loading (before window.onload - don't add the `defer` attribute): -->
     <script src="./auth.js"></script>
     <script>
-        if (isLoggedIn() === true) window.location.replace("/posts");
+        if (isLoggedIn() === true) window.location.replace("postspage/index.html");
     </script>
 </head>
 
-<body>
-   
+<body onload="getLoginData()">
+
     <main>
-       
+
 
         <form id="loginForm">
 
@@ -49,21 +49,40 @@
                                     <h2 class="mb-3"><b>Catch up.</b></h2>
 
                                     <div data-mdb-input-init class="form-outline mb-4">
-                                        <input type="text" id="username" value="" class="form-control form-control-lg" />
-                                        <label class="form-label" for="username"  required>Username</label>
+                                        <input type="text" id="username" value=""
+                                            class="form-control form-control-lg" />
+                                        <label class="form-label" for="username" required>Username</label>
                                     </div>
 
-                                   <div data-mdb-input-init class="form-outline mb-4">
+                                    <div data-mdb-input-init class="form-outline mb-4">
                                         <input type="password" id="password" class="form-control form-control-lg" />
-                                        <label class="form-label" for="password" minlength="8" required>Password</label>
-                                    </div <div class="d-flex justify-content-center">
-                                    <button type="submit" data-mdb-button-init data-mdb-ripple-init
-                                        class="btn btn-primary btn-block btn-med gradient-custom-4 text-body"
-                                        id="loginButton">Log In</button>
-                                    <p> <a href="register/registration.html">New user? Register here.</a> </p>
+                                        <label class="form-label" for="password" minlength="8" value=""
+                                            required>Password</label>
+                                            <input type="checkbox" style="margin-left: 55%;" onclick="toggleVisibility()"/>Show Password</br>  
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <button type="submit" data-mdb-button-init data-mdb-ripple-init
+                                            class="btn btn-primary btn-block btn-med gradient-custom-4 text-body"
+                                            id="loginButton">Log In</button>
+                                    </div>
+                                    <div>
+                                        <p style=" text-align: center;"> <a href="register/registration.html">New user?
+                                                Register here.</a> </p>
+                                    </div>
+
                                 </div>
 
-                            </div>
+                                
+<script>  
+function toggleVisibility() {  
+  let getPasword = document.getElementById("password");  
+  if (getPasword.type === "password") {  
+    getPasword.type = "text";  
+  } else {  
+    getPasword.type = "password";  
+  }  
+}  
+</script> 
         </form>
 
     </main>

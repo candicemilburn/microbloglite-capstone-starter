@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../images/blacksnaptic (1).png" type="image/x-icon" />
-    <title>Register | Snapic</title>
-
-
-    <!DOCTYPE html>
+   <!DOCTYPE html>
     <html lang="en">
 
     <head>
@@ -26,11 +16,18 @@
         <!-- Global CSS (CSS rules you want applied to all pages) -->
         <link rel="stylesheet" href="../global.css">
         <link rel="stylesheet" href="./registration.css">
-
+        <link rel="icon" href="../images/blacksnaptic (1).png" type="image/x-icon" />
+        <title>Register | PostSense</title>
+    
+        <!-- Run BEFORE page is finished loading (before window.onload - don't add the `defer` attribute): -->
+        <script src="../auth.js"></script>
+        <script>
+            if (isLoggedIn() === true) window.location.replace("../postspage/index.html");
+        </script>
     </head>
    
 
-<body>
+    <body>
     <main>
         <div style="size: 20%;" class=""></div>
         <section class="vh-100">
