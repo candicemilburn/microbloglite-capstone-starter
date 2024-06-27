@@ -51,7 +51,8 @@ function login (loginData) {
                 // Here is where you might want to add an error notification 
                 // or other visible indicator to the page so that the user is  
                 // informed that they have entered the wrong login info.
-                return alert('Incorrect log in credentials. Please try again.')
+                alert('Incorrect log in credentials. Please try again.')
+                window.location.assign("index.html");
             }
 
             window.localStorage.setItem("login-data", JSON.stringify(loginData));

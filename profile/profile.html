@@ -29,8 +29,9 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light container">
-        <a class="navbar-brand" href="../postspage/index.html" style="margin-left: 2%;">PostSense</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark container" id="nav">
+        <a class="navbar-brand" href="../postspage/index.html" style="margin-left: 2%;"><img
+            src="../images/snapik2 (2).png" style="height: 60px;">PostSense</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -38,14 +39,13 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
                 <a class="nav-item nav-link active" href="../postspage/index.html">Post Feed</a>
-                <a class="nav-item nav-link" href="#">Inbox</a>
 
             </div>
         </div>
 
         <form class="form-inline d-flex" role="search">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-sm my-2 my-sm-0" type="submit" style="margin-right: 10%;">Search</button>
+            <button class="btn btn-sm my-2 my-sm-0" type="submit" style="margin-right: 10%; color: white;" >Search</button>
         </form>
 
         <button class="btn btn-sm btn-outline-primary my-2 my-sm-0" type="submit" style="margin-right: 2%;"
@@ -56,19 +56,19 @@
     <main id="profilepage">
         <div id="page-container" class="container 20px h-100">
             <div id="content-wrap">
-                <div class="d-flex justify-content-center"> <a href="../postspage/index.html"> <img src="../images/blacksnaptic (1).png" style="height: 70px;"></a></div><center>PostSense</center><br><br>
-
-                <section class="d-flex py-3 justify-content-center">
-                    <div class="card" style="width: 16rem; margin-left: 10%;">
+                
+                <marquee style="margin-bottom: -10%;"><h1>Welcome Crystal!</h1></marquee>
+                <section class="d-flex py-3 justify-content-center" >
+                 <div class="card" style="width: 16rem; margin-left: 10%; margin-top:12%;">
                         <img class="card-img-top" src="../images/sailormoon.jpg" alt="Card image cap">
-                        <h5 class="card-title d-flex justify-content-center " id="bioName">Candy Tuu Cool</h5>
-                        <p class="card-text">She's from dallas, she eat rudy's</p>
-                        <center><a href="#" class="btn btn-sm btn-outline-primary">Edit Bio</a><br></center>
+                        <h5 class="card-title d-flex justify-content-center " id="bioName"><b>Cris Tuu Cool</b></h5>
+                        <p class="card-text" style="text-align: center;">She's from Dallas, she eat Rudy's!</p>
+                        <center><a href="#" class="btn btn-sm btn-outline-primary mb-2" id="bio">Edit Bio</a><br></center>
                     </div>
 
 
-<!--Users posting area-->
-                  <form id="addPost" class="card container " style="width: 50%; height: min-content; margin-top: 8%;">
+                    <!--Users posting area-->
+                    <form id="addPost" class="card container " style="width: 50%; height: min-content; margin-top: 18%;">
                         <div>
                             <h6 style="margin-top: 3%; margin-bottom: 2%;">Post something.</h6>
                             <label for="text"></label>
@@ -78,30 +78,29 @@
                         <button class="btn btn-sm btn-outline-primary  mt-3 mb-3 " style="width: 25%; margin-left: 75%;"
                             type="submit" id="addThePost">Post</button>
                     </form>
-
+                
                 </section>
-                    <form>
-                        <div id="userPost"></div>
+                <form>
+                    <div id="userPost"></div>
 
-                        <!-- <div>
+                    <!-- <div>
                         <h5 id="welcomeUser"></h5>
                     </div> -->
 
-                        <div id="postDiv" class="card-body">
-                            <!-- Posts will be dynamically added here -->
-                        </div>
+                    <div id="postDiv" class="card-body">
+                        <!-- Posts will be dynamically added here -->
+                    </div>
 
 
-              
+
 
     </main>
 
     <footer class="py-3 my-4" id="footer">
-        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-            <li class="nav-item"><a href="../footpages/features.html" class="nav-link px-2">Features</a></li>
-            <li class="nav-item"><a href="../footpages/membership.html" class="nav-link px-2 ">Memberships</a></li>
-            <li class="nav-item"><a href="../footpages/faq.html" class="nav-link px-2 ">FAQs</a></li>
-            <li class="nav-item"><a href="../footpages/about.html" class="nav-link px-2">About</a></li>
+        <ul class="nav justify-content-center border-bottom pb-4 mb-3">
+            <li class="nav-item"><a href="../footpages/features.html" class="nav-link px-2" style="color: black;">Features</a></li>
+            <li class="nav-item"><a href="../footpages/faq.html" class="nav-link px-2 "style="color: black;">FAQs</a></li>
+            <li class="nav-item"><a href="../footpages/about.html" class="nav-link px-2"style="color: black;">About</a></li>
         </ul>
         <p class="text-center text-white">© 2021 PostSense, Inc.</p>
     </footer>

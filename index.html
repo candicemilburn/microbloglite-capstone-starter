@@ -15,7 +15,7 @@
 
     <!-- Global CSS (CSS rules you want applied to all pages) -->
     <link rel="stylesheet" href="global.css">
-    <link rel="stylesheet" href="./landing.css">
+    <link rel="stylesheet" href="landing.css">
 
     <link rel="icon" href="images/blacksnaptic (1).png" type="image/x-icon" />
     <title>Login | PostSense</title>
@@ -29,8 +29,14 @@
 
 <body onload="getLoginData()">
 
-    <main>
-
+  <main id="theStuff">
+    
+        <section class="hero-section text-center py-5">
+            <div class="container" style="margin-bottom: -7%;">
+              <h1 class="display-4 mb-2"><text style="font-size: 55px; color: white;">Welcome to PostSense</text></h1>
+              <p style="color: #0d6efd;"><b> A simple blog for your every day thoughts.</b></p>
+            </div>
+          </section>
 
         <form id="loginForm">
 
@@ -71,7 +77,6 @@
                                     </div>
 
                                 </div>
-
                                 
 <script>  
 function toggleVisibility() {  
@@ -90,7 +95,7 @@ function toggleVisibility() {
     <footer class="py-3 my-4" id="footer">
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
             <li class="nav-item"><a href="footpages/features.html" class="nav-link px-2">Features</a></li>
-            <li class="nav-item"><a href="footpages/membership.html" class="nav-link px-2 ">Memberships</a></li>
+            
             <li class="nav-item"><a href="footpages/faq.html" class="nav-link px-2 ">FAQs</a></li>
             <li class="nav-item"><a href="footpages/about.html" class="nav-link px-2">About</a></li>
         </ul>
