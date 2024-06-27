@@ -1,8 +1,6 @@
-/* Landing Page JavaScript */
-
 "use strict";
 
-const loginForm = document.querySelector("#login");
+const loginForm = document.querySelector("#loginForm");
 
 loginForm.onsubmit = function (event) {
     // Prevent the form from refreshing the page,
@@ -22,3 +20,12 @@ loginForm.onsubmit = function (event) {
     // Time to actually process the login using the function from auth.js!
     login(loginData);
 };
+
+// function isLoggedIn () {
+//     const loginData = getLoginData();
+//     return Boolean(loginData.token);
+// }
+// function getLoginData () {
+//     const loginJSON = window.localStorage.getItem("login-data");
+//     return JSON.parse(loginJSON) || {};
+// }
