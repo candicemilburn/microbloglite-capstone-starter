@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+    <!-- Global CSS (CSS rules you want applied to all pages) -->
+    <link rel="stylesheet" href="../global.css">
+    <link rel="stylesheet" href="./profile.css">
+    <link rel="icon" href="../images/blacksnaptic (1).png" type="image/x-icon" />
+    <title> Profile | PostSense</title>
+
+    <!-- <script src="../auth.js"></script>
+    <script>
+        if (isLoggedIn() === false) window.location.replace("../index.html");
+    </script> -->
+</head>
+
+<body>
+  
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark container" id="nav">
+        <a class="navbar-brand" href="../postspage/index.html" style="margin-left: 2%;"><img
+            src="../images/snapik2 (2).png" style="height: 60px;">PostSense</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="../postspage/index.html">Post Feed</a>
+
+            </div>
+        </div>
+
+        <form class="form-inline d-flex" role="search">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-sm my-2 my-sm-0" type="submit" style="margin-right: 10%; color: white;" >Search</button>
+        </form>
+
+        <button class="btn btn-sm btn-outline-primary my-2 my-sm-0" type="submit" style="margin-right: 2%;"
+            id="logOutButton">Log Out</button>
+
+    </nav>
+
+    <div class="d-flex justify-content-center container"><img src="../images/sm2.jpg" style="width: 500px;"></div>
+
+    <footer class="py-3 my-4" id="footer">
+        <ul class="nav justify-content-center border-bottom pb-4 mb-3">
+            <li class="nav-item"><a href="../footpages/features.html" class="nav-link px-2" style="color: black;">Features</a></li>
+            <li class="nav-item"><a href="../footpages/faq.html" class="nav-link px-2 "style="color: black;">FAQs</a></li>
+            <li class="nav-item"><a href="../footpages/about.html" class="nav-link px-2"style="color: black;">About</a></li>
+        </ul>
+        <p class="text-center text-white">© 2021 PostSense, Inc.</p>
+    </footer>
+    </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="./profile.js"></script>
+
+</body>
+</html>
