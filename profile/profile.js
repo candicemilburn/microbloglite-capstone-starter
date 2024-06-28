@@ -1,12 +1,70 @@
 "use strict"
-
+console.log("wired to the T")
 window.onload = () => {
     let logOutButton = document.querySelector("#logOutButton");
     let addPost = document.querySelector("#addPost");
-
+      
     logOutButton.addEventListener("click", logout);
     addPost.addEventListener("submit", addToFeed);
 }
+
+const displayUsersPost = async () => {
+
+  // Getting a hold of the container where posts will be displayed
+  let postContainer = document.querySelector("#postContainer");
+
+  // Clear previous content if needed
+  postContainer.innerHTML = '';
+
+ //  calling the fetch request made with avaliable data
+  let allUserPosts = await getUsersPost();
+
+ // running a loop through data to work with it individually 
+  allUserPosts.forEach((post) => {
+
+     // display data in a prettier way
+     let date = new Date(post.createdAt).toLocaleString();
+
+     if (post.username === localStorage.username){
+      postContainer.innerHTML += `
+     <div class="post">
+             <span class="username">Username: ${post.username}</span><br>
+             <span class="comment">Comment: ${post.text}</span><br>
+             <span class="date">Posted at: ${date}</span><br>
+         </div><hr>`;
+     
+     }
+     
+
+  });
+
+}
+
+// calling the data from the API
+const getUsersPost = async () => {
+
+ const loginData = getLoginData();
+
+ const response = await fetch("http://microbloglite.us-east-2.elasticbeanstalk.com/api/posts", {
+     method: "GET",
+     headers: {
+         // This header is how we authenticate our user with the
+         // server for any API requests which require the user
+         // to be logged-in in order to have access.
+         // In the API docs, these endpoints display a lock icon.
+         Authorization: `Bearer ${loginData.token}`
+     }
+ })
+
+ const data = await response.json();
+
+ //do something with the posts
+ // console.log(data);
+
+ return data
+
+}
+
 
 
 function logout() {
@@ -79,3 +137,5 @@ const addToFeed = async (event) => {
   }
 
 }
+
+
