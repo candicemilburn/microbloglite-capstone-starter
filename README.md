@@ -12,12 +12,11 @@ Candice Milburn
 ### This is my last YU capstone project assignment for a Microblog website.
 This project contains the following pages:<br>
 1. index.html<br>
-2. onepiece.html<br>
+2. postspage/post.html<br>
 3. registration.html<br>
-4. login.html<br>
-5. bikinis.html<br>
-6. swim.html<br>
-7. checkout.html<br>
+4. profile.html<br>
+5. landing.html<br>
+6. terms.html<br>
 ---
 ## Features and Usage
 * The website is designed as microblog website to create posts and read other's
@@ -47,11 +46,15 @@ canvas {
     padding: 0;
     background-color: black;
 
-
 }
 ```
 
 ---
 This is a css code it helped maked my animated landing page position to the background of my elements with "z-index"!
 ---
+
+![Website](https://github.com/candicemilburn/microbloglite-capstone-starter/blob/main/images/ps1.png)
+![Website](https://github.com/candicemilburn/microbloglite-capstone-starter/blob/main/images/ps2.png)
+![Website](https://github.com/candicemilburn/microbloglite-capstone-starter/blob/main/images/ps3.png)
+![Website](https://github.com/candicemilburn/microbloglite-capstone-starter/blob/main/images/ps4.png)
 
