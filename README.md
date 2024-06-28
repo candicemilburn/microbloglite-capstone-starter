@@ -52,7 +52,7 @@ canvas {
 ---
 This is a css code it helped maked my animated landing page position to the background of my elements with "z-index"!
 ---
-
+## This is how my website looks:
 ![Website](https://github.com/candicemilburn/microbloglite-capstone-starter/blob/main/images/ps1.png)
 ![Website](https://github.com/candicemilburn/microbloglite-capstone-starter/blob/main/images/ps2.png)
 ![Website](https://github.com/candicemilburn/microbloglite-capstone-starter/blob/main/images/ps3.png)
