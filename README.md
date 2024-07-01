@@ -6,8 +6,7 @@ Practice and experimentation provide experience, and experience provides confide
 
 # PostSense 
 
-## Author
-Candice Milburn
+## Author : Candice Milburn
 ---
 ### This is my last YU capstone project assignment for a Microblog website.
 This project contains the following pages:<br>
