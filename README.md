@@ -31,7 +31,7 @@ The technologies used in this project include:
 ---
 ## Install This Project 
 Use your preferred code editor. I used Git Bash
-git clone https://github.com/candicemilburn/
+git clone https://github.com/candicemilburn/microbloglite-capstone-starter.git
 ---
 ## Some of my favorite Code:
 ``` 
